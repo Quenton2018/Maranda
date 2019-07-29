@@ -128,7 +128,7 @@
 		height: 40px;
 		line-height: 40px;
 		color: #000;
-		background: rgba(255, 255, 255, 0.58);
+		background: rgba(255, 255, 255, 0.7);
 		position: fixed;
 		top: 0;
 		z-index: 999;
@@ -196,6 +196,7 @@
 		background: #E8E8E8;
 		box-sizing: border-box;
 		padding-left: 8px;
+		z-index: 888;
 	}
 	
 	.list-fa:hover .cl-wrap {
