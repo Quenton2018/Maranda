@@ -1,5 +1,5 @@
 {
-  "name": "myvue",
+  "name": "windCame",
   "version": "1.0.0",
   "description": "A Vue.js project",
   "author": "Quenton2019 <15180172690@163.com>",
@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
+    "iview": "^3.4.2",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
     "vuex": "^3.1.1"
