@@ -15,7 +15,9 @@
 							<Card :goodsData='goodsData'></Card>
 						</div>
 					</Col>
-					<Col :xs="{ span: 24, offset: 0 }" :lg="{ span: 7, offset: 1 }">Col</Col>
+					<Col :xs="{ span: 24, offset: 0 }" :lg="{ span: 8, offset: 0 }">
+						<PublicTag :goodsData='goodsData'></PublicTag>
+					</Col>
 				</Row>	
 			</div>
 		</div>
@@ -27,6 +29,7 @@
 	import { Grid } from 'iView'
 	import Banner from '../components/banner.vue'
 	import Card from '../components/card.vue'
+	import PublicTag from '../components/publicTag.vue'
 	export default{
 		data(){
 			return{
@@ -35,7 +38,8 @@
 		},
 		components:{
 			Banner,
-			Card
+			Card,
+			PublicTag
 		}
 	}
 </script>
