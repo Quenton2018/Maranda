@@ -73,7 +73,6 @@ export default {
       } else {
         this.tagFixed = false
       }
-      console.log(scrollTop, this.tagFixed)
     }
   },
   props: ['goodsData']
