@@ -8,18 +8,39 @@
 						<span>已学</span><span style="color: #fe5187;">单词</span>
 					</div>
 				</div>
-				<div class="inner">
-					<ul>
-						<li v-for="(val,i) in goodsData.wordList" :key="i">
-							<div v-if="index===i" @click="index=null" class="word-ch">
-								<span>{{val.ch}}</span>
-							</div>
-							<div v-else @click="translate(i)" class="word-en">
-								<span>{{val.en}}</span>
-							</div>
-						</li>
-					</ul>
-					<div class="total">你真厉害，已经学习了{{goodsData.wordList.length}}个单词了，继续加油吧！^ε^</div>
+				<div>
+					<div style="margin: 10px 0;">
+						<RadioGroup v-model="flag" type="button">
+					        <Radio label="中文"></Radio>
+					        <Radio label="英文"></Radio>
+					    </RadioGroup>
+					</div>
+					<div class="inner" v-if="flag==='英文'">
+						<ul>
+							<li v-for="(val,i) in goodsData.wordList" :key="i">
+								<div v-if="index===i" @click="index=null" class="word-ch">
+									<span>{{val.ch}}</span>
+								</div>
+								<div v-else @click="translate(i)" class="word-en">
+									<span>{{val.en}}</span>
+								</div>
+							</li>
+						</ul>
+						<div class="total">你真厉害，已经学习了{{goodsData.wordList.length}}个单词了，继续加油吧！^ε^</div>
+					</div>
+					<div class="inner" v-if="flag==='中文'">
+						<ul>
+							<li v-for="(val,i) in goodsData.wordList" :key="i">
+								<div v-if="index===i" @click="index=null" class="word-ch">
+									<span>{{val.en}}</span>
+								</div>
+								<div v-else @click="translate(i)" class="word-en">
+									<span>{{val.ch}}</span>
+								</div>
+							</li>
+						</ul>
+						<div class="total">你真厉害，已经学习了{{goodsData.wordList.length}}个单词了，继续加油吧！^ε^</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -32,11 +53,12 @@
 		data() {
 			return {
 				goodsData,
-				index: null
+				index: null,
+				flag: '英文'
 			}
 		},
 		methods: {
-			translate(i) {
+			translate (i) {
 				this.index = i
 			}
 		}

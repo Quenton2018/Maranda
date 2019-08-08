@@ -125,7 +125,27 @@ const goodsData = {
 		{ ch: '食品杂货店', en: 'grocer', id: 1123 },
 		{ ch: '国籍', en: 'nationnality', id: 1124 },
 		{ ch: '洗', en: 'wash', id: 1125 },
-		{ ch: '烹饪', en: 'cook', id: 1126 }
+		{ ch: '烹饪', en: 'cook', id: 1126 },
+		{ ch: '第十一', en: 'eleventh', id: 1127 },
+		{ ch: '好几百', en: 'hundreds of', id: 1128 },
+		{ ch: '亲子，我们自己', en: 'ourselves', id: 1129 },
+		{ ch: '在...前面', en: 'in front of', id: 1130 },
+		{ ch: '酒，瓶子', en: 'bottle', id: 1131 },
+		{ ch: '或许，可能', en: 'perhaps', id: 1132 },
+		{ ch: '也许，可能', en: 'thirteenth', id: 1133 },
+		{ ch: '渴望，口渴', en: 'thirsty', id: 1134 },
+		{ ch: '突然，忽然', en: 'suddenly', id: 1135 },
+		{ ch: '晚，迟到', en: 'late', id: 1136 },
+		{ ch: '切，割', en: 'cut', id: 1137 },
+		{ ch: '小的，比较小的', en: 'little', id: 1138 },
+		{ ch: '忙绿的', en: 'busy', id: 1139 },
+		{ ch: '煮沸，烧开', en: 'boil', id: 1140 },
+		{ ch: '教堂', en: 'church', id: 1141 },
+		{ ch: '达到，出现', en: 'arrive', id: 1142 },
+		{ ch: '告诉', en: 'tell', id: 1143 },
+		{ ch: '你自己', en: 'yourself', id: 1144 },
+		{ ch: '计算，数数', en: 'count', id: 1145 },
+		{ ch: '懒惰的', en: 'lazy', id: 1146 }
 	]
 }
 
