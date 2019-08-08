@@ -34,7 +34,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   .banner-wrap {
     width: 100%;
     height: 300px;

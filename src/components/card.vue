@@ -62,7 +62,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   .card-wrap {
     width: 100%;
     border-bottom: 1px dashed #C5C5C5;

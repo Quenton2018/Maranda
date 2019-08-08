@@ -23,14 +23,14 @@
 						<div class="list-fa">
 							<span :class="i===index?'nav-active':''" @click='goPage(i)'>{{val.title}}</span>
 							<div class="cl-wrap">
-								<div v-if="val.children" class="list-ch" v-for="(child,s) in val.children" @click='goPage(i)'>
+								<div v-if="val.children" class="list-ch" v-for="(child,s) in val.children" :key='s' @click='goPage(i)'>
 									<router-link :to='{path:child.path}'><i>{{child.title}}</i></router-link>
 								</div>
 							</div>
 						</div>
 					</router-link>
 				</div>
-			</div st>
+			</div>
 		</div>
 		<div class="back-top" @click="backTop" :class="tagFixed?'back-top-active':''"></div>
 	</div>
@@ -42,6 +42,7 @@
 	export default {
 		created () {
 	    	let path = this.$route.path
+	    	this.path = path
 	        if (path.indexOf('study') > 0) {
 	        	this.index = 1
 	        }else if (path.indexOf('jottings') > 0) {
@@ -60,6 +61,7 @@
 			return {
 				index: 0,
 				tagFixed: false,
+				path: '',
 				navList: [{
 						title: '首页',
 						path: '/',
@@ -71,10 +73,6 @@
 						children: [{
 								title: '学习英语',
 								path: './study/studyEnglish'
-							},
-							{
-								title: 'www',
-								path: ''
 							}
 						]
 					},
@@ -83,10 +81,6 @@
 						path: '',
 						children: [{
 								title: 'fads',
-								path: ''
-							},
-							{
-								title: 'zzzz',
 								path: ''
 							}
 						]
@@ -97,10 +91,6 @@
 						children: [{
 								title: '555',
 								path: ''
-							},
-							{
-								title: '666',
-								path: ''
 							}
 						]
 					},
@@ -110,10 +100,6 @@
 						children: [{
 								title: '777',
 								path: ''
-							},
-							{
-								title: '8888',
-								path: ''
 							}
 						]
 					},
@@ -122,10 +108,6 @@
 						path: '',
 						children: [{
 								title: 'e3e3',
-								path: ''
-							},
-							{
-								title: '1t4t4',
 								path: ''
 							}
 						]

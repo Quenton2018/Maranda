@@ -79,7 +79,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   .tag-wrap {
     width: 100%;
     padding: 0 15px;
