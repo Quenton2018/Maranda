@@ -2,8 +2,9 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 Vue.use(Router)
-import Index from '../views/index'
-import studyEnglish from '../views/studyEnglish'
+import Index from '../views/index.vue'
+import studyEnglish from '../views/studyEnglish.vue'
+import Sports from '../views/sports.vue'
 
 export default new Router({
   routes: [
@@ -12,8 +13,12 @@ export default new Router({
 	    component: Index
 	  },
     {
-      path: '/study/studyEnglish',
+      path: '/studyEnglish',
       component: studyEnglish
+    },
+    {
+    	path: '/sprots',
+    	component: Sports
     }
   ]
 })

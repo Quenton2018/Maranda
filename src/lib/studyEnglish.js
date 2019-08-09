@@ -78,7 +78,7 @@ const goodsData = {
 		{ ch: '也，很，非常', en: 'too', id: 1076 },
 		{ ch: '十二日', en: 'twelfth', id: 1077 },
 		{ ch: '二', en: 'two', id: 1078 },
-		{ ch: '雨伞', en: 'unbrella', id: 1079 },
+		{ ch: '雨伞', en: 'umbrella', id: 1079 },
 		{ ch: '村庄', en: 'village', id: 1080 },
 		{ ch: '旅游者，游客', en: 'visitor', id: 1081 },
 		{ ch: '温暖', en: 'warm', id: 1082 },

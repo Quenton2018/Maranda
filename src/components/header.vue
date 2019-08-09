@@ -23,8 +23,8 @@
 						<div class="list-fa">
 							<span :class="i===index?'nav-active':''" @click='goPage(i)'>{{val.title}}</span>
 							<div class="cl-wrap">
-								<div v-if="val.children" class="list-ch" v-for="(child,s) in val.children" :key='s' @click='goPage(i)'>
-									<router-link :to='{path:child.path}'><i>{{child.title}}</i></router-link>
+								<div class="list-ch" v-for="(child,s) in val.children" :key='s' @click='goPage(i)'>
+									<i @click="toRouter(child.path)">{{child.title}}</i>
 								</div>
 							</div>
 						</div>
@@ -40,77 +40,60 @@
 	import { Input, Button } from 'iView'
 
 	export default {
-		created () {
-	    	let path = this.$route.path
-	    	this.path = path
-	        if (path.indexOf('study') > 0) {
-	        	this.index = 1
-	        }else if (path.indexOf('jottings') > 0) {
-	        	this.index = 2
-	        }else if (path.indexOf('foundLife') > 0) {
-	        	this.index = 3
-	        }else if (path.indexOf('lister') > 0) {
-	        	this.index = 4
-	        }else if (path.indexOf('technology') > 0) {
-	        	this.index = 5
-	        }else{
-	        	this.index = 0
-	        }
+		created() {
+			this.init()
 		},
 		data() {
 			return {
 				index: 0,
 				tagFixed: false,
-				path: '',
 				navList: [{
 						title: '首页',
 						path: '/',
-						children: []
+						children: [{
+							title: '',
+							path: ''
+						}]
 					},
 					{
 						title: '学无止境',
 						path: '',
 						children: [{
-								title: '学习英语',
-								path: './study/studyEnglish'
-							}
-						]
+							title: '学习英语',
+							path: './studyEnglish'
+						}]
 					},
 					{
 						title: '随笔',
 						path: '',
 						children: [{
-								title: '听心语',
-								path: ''
-							}
-						]
+							title: '听心语',
+							path: ''
+						}]
 					},
 					{
 						title: '发现生活',
 						path: '',
 						children: [{
-								title: '美好心情',
-								path: ''
-							}
-						]
+							title: '我的运动',
+							path: './sprots'
+						}]
 					},
 					{
 						title: '心灵聆听',
 						path: '',
 						children: [{
-								title: '听风吟',
-								path: ''
-							}
-						]
+							title: '听风吟',
+							path: ''
+						}]
 					},
 					{
 						title: '技术支持',
 						path: '',
 						children: [{
-								title: 'html',
-								path: ''
-							}
-						]
+							title: 'html',
+							path: ''
+						}]
 					}
 				]
 			}
@@ -119,6 +102,18 @@
 			window.addEventListener('scroll', this.handleScroll, true)
 		},
 		methods: {
+			init () {
+				let path = this.$route.path
+				let pathRouter = path.split('/')
+				let showPath = ('./' + pathRouter[pathRouter.length - 1])
+				for(let i = 0, len = this.navList.length; i < len; i++) {
+					for(let j = 0, lens = this.navList[i].children.length; j < lens; j++) {
+						if(showPath === this.navList[i].children[j].path) {
+							this.index = i
+						}
+					}
+				}
+			},
 			goPage(i) {
 				this.index = i
 			},
@@ -132,6 +127,11 @@
 			},
 			backTop() {
 				document.documentElement.scrollTop = 0
+			},
+			toRouter(path) {
+				if(('.' + this.$route.path) !== path) {
+					this.$router.push(path)
+				}
 			}
 		}
 	}
@@ -225,12 +225,9 @@
 		overflow: hidden;
 	}
 	
-	.list-ch a {
+	.list-ch i {
 		font-size: 16px;
 		color: #515151;
-	}
-	
-	.list-ch i {
 		font-style: normal;
 	}
 	
