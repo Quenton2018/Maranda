@@ -145,7 +145,29 @@ const goodsData = {
 		{ ch: '告诉', en: 'tell', id: 1143 },
 		{ ch: '你自己', en: 'yourself', id: 1144 },
 		{ ch: '计算，数数', en: 'count', id: 1145 },
-		{ ch: '懒惰的', en: 'lazy', id: 1146 }
+		{ ch: '懒惰的', en: 'lazy', id: 1146 },
+		{ ch: '中断，破坏', en: 'break', id: 1147 },
+		{ ch: '男孩，小子', en: 'boy', id: 1148 },
+		{ ch: '蛋，卵细胞', en: 'egg', id: 1149 },
+		{ ch: '电影院', en: 'cinema', id: 1150 },
+		{ ch: '一点', en: 'a little', id: 1151 },
+		{ ch: '在早晨', en: 'in the morning', id: 1152 },
+		{ ch: '问题', en: 'question', id: 1153 },
+		{ ch: '芬兰语', en: 'Finnish', id: 1154 },
+		{ ch: '中年的', en: 'middle-aged', id: 1155 },
+		{ ch: '红茶', en: 'black tea', id: 1156 },
+		{ ch: '伦敦', en: 'London', id: 1157 },
+		{ ch: '鼓舞，振作一点', en: 'cheer up', id: 1158 },
+		{ ch: '聪明的，光鲜的', en: 'smart', id: 1159 },
+		{ ch: '轻身的，安静的', en: 'quiet', id: 1160 },
+		{ ch: '播放，演奏，游戏', en: 'play', id: 1161 },
+		{ ch: '草，草地', en: 'grass', id: 1162 },
+		{ ch: '荒废，生锈的', en: 'rusty', id: 1163 },
+		{ ch: '害羞的，拮据的，经济困难的', en: 'embarrassed', id: 1164 },
+		{ ch: '温和的，和善的', en: 'mild', id: 1165 },
+		{ ch: '吵闹，轰动一时', en: 'make a noise', id: 1166 },
+		{ ch: '香皂，肥皂', en: 'soap', id: 1167 },
+		{ ch: '皮肤', en: 'skin', id: 1168 }
 	]
 }
 

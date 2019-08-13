@@ -1,6 +1,9 @@
 <template>
 	<div>
-		<div class="topnav">相见是缘，感谢您的光临！</div>
+		<div class="topnav">
+			相见是缘，感谢您的光临！
+			<span v-html="nowTime"></span>
+		</div>
 		<div class="logo-wrap">
 			<div class="logo">
 				<div class="logo-left">
@@ -32,13 +35,13 @@
 				</div>
 			</div>
 		</div>
-		<div class="back-top" @click="backTop" :class="tagFixed?'back-top-active':''"></div>
+		<BackTop :height="100" :bottom="200">
+	        <div class="back-top"></div>
+	    </BackTop>
 	</div>
 </template>
 
 <script>
-	import { Input, Button } from 'iView'
-
 	export default {
 		created() {
 			this.init()
@@ -47,6 +50,7 @@
 			return {
 				index: 0,
 				tagFixed: false,
+				nowTime: null,
 				navList: [{
 						title: '首页',
 						path: '/',
@@ -99,10 +103,21 @@
 			}
 		},
 		mounted() {
-			window.addEventListener('scroll', this.handleScroll, true)
+			let self = this
+			setInterval(() => {
+				let date = new Date();
+				let year = date.getFullYear()
+				let mouth = parseInt(date.getMonth() + 1) < 10 ? ('0' + (date.getMonth() + 1)) : (date.getMonth() + 1)
+				let da = parseInt(date.getDate()) < 10 ? ('0' + date.getDate()) : date.getDate()
+				let week = date.getDay()
+				let h = parseInt(date.getHours()) < 10 ? ('0' + date.getHours()) : date.getHours()
+				let m = parseInt(date.getMinutes()) < 10 ? ('0' + date.getMinutes()) : date.getMinutes()
+				let s = parseInt(date.getSeconds()) < 10 ? ('0' + date.getSeconds()) : date.getSeconds()
+				this.nowTime = (year + '年' + mouth + '月' + da + '日  星期' + week + ' ' + h + ':' + m + ':' + s)
+			}, 1000)
 		},
 		methods: {
-			init () {
+			init() {
 				let path = this.$route.path
 				let pathRouter = path.split('/')
 				let showPath = ('./' + pathRouter[pathRouter.length - 1])
@@ -117,21 +132,15 @@
 			goPage(i) {
 				this.index = i
 			},
-			handleScroll() {
-				let scrollTop = document.documentElement.scrollTop
-				if(scrollTop >= 100) {
-					this.tagFixed = true
-				} else {
-					this.tagFixed = false
-				}
-			},
-			backTop() {
-				document.documentElement.scrollTop = 0
-			},
 			toRouter(path) {
 				if(('.' + this.$route.path) !== path) {
 					this.$router.push(path)
 				}
+			}
+		},
+		beforeDestroy() {
+			if(this.timer) {
+				clearInterval(this.timer);
 			}
 		}
 	}
@@ -151,6 +160,14 @@
 		text-align: center;
 		font-size: 14px;
 		font-weight: 600;
+	}
+	
+	.topnav span {
+		position: absolute;
+		top: 0;
+		left: 20px;
+		color: #333;
+		font-weight: 400;
 	}
 	
 	.logo-wrap {
@@ -246,16 +263,11 @@
 		background-position-y: 0;
 		position: fixed;
 		right: 15px;
-		bottom: -300px;
+		bottom: 60px;
 		transition: 0.5s linear;
 	}
 	
 	.back-top:hover {
 		cursor: pointer;
-	}
-	
-	.back-top-active {
-		bottom: 60px;
-		transition: 1s linear;
 	}
 </style>
