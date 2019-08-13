@@ -1,7 +1,7 @@
 <template>
   <div class="banner-wrap">
     <div class="banner-inner" @mouseenter="autoplay=false" @mouseleave="autoplay=true">
-      <Carousel :autoplay="autoplay" :autoplay-speed="3000">
+      <Carousel :autoplay="autoplay" :autoplay-speed="3000" loop>
         <Carousel-item>
           <div class="img-wrap">
             <a href="#"><img src="../assets/img/banner1.jpg" alt=""></a>
