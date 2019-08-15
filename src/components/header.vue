@@ -2,7 +2,11 @@
 	<div>
 		<div class="topnav">
 			相见是缘，感谢您的光临！
-			<span v-html="nowTime"></span>
+			<span class="now-time" v-html="nowTime"></span>
+			<div class="weather">
+				<span>所在城市：{{city}}, </span>
+				<span>{{weather.type}} {{weather.high}} {{weather.low}} {{weather.fengxiang}} {{weather.fengli}}</span>
+			</div>
 		</div>
 		<div class="logo-wrap">
 			<div class="logo">
@@ -42,15 +46,19 @@
 </template>
 
 <script>
+	import { request } from '../common_js/requestApi.js'
 	export default {
 		created() {
 			this.init()
+			this.getData()
 		},
 		data() {
 			return {
 				index: 0,
 				tagFixed: false,
 				nowTime: null,
+				weather: {},
+				city: '',
 				navList: [{
 						title: '首页',
 						path: '/',
@@ -136,6 +144,12 @@
 				if(('.' + this.$route.path) !== path) {
 					this.$router.push(path)
 				}
+			},
+			async getData () {
+				let data = await request('https://www.apiopen.top/weatherApi?city=上海 ', 'get', {})
+				console.log(data)
+				this.city = data.data.city
+				this.weather = data.data.forecast[0]
 			}
 		},
 		beforeDestroy() {
@@ -162,12 +176,19 @@
 		font-weight: 600;
 	}
 	
-	.topnav span {
+	.topnav .now-time, .topnav .weather {
 		position: absolute;
 		top: 0;
-		left: 20px;
 		color: #333;
 		font-weight: 400;
+	}
+	
+	.topnav .now-time {
+		left: 20px;
+	}
+	
+	.topnav .weather {
+		right: 20px;
 	}
 	
 	.logo-wrap {
