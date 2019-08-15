@@ -167,7 +167,27 @@ const goodsData = {
 		{ ch: '温和的，和善的', en: 'mild', id: 1165 },
 		{ ch: '吵闹，轰动一时', en: 'make a noise', id: 1166 },
 		{ ch: '香皂，肥皂', en: 'soap', id: 1167 },
-		{ ch: '皮肤', en: 'skin', id: 1168 }
+		{ ch: '皮肤', en: 'skin', id: 1168 },
+		{ ch: '七月', en: 'July', id: 1169 },
+		{ ch: '着手工作', en: 'go to work', id: 1170 },
+		{ ch: '试图，想要，努力', en: 'try', id: 1171 },
+		{ ch: '移动，搬家，提议，使感动', en: 'move', id: 1172 },
+		{ ch: '型，模范', en: 'model', id: 1173 },
+		{ ch: '苏格兰', en: 'Scotland', id: 1174 },
+		{ ch: '穿过，由于', en: 'through', id: 1175 },
+		{ ch: '水', en: 'water', id: 1176 },
+		{ ch: '奥地利', en: 'Austria', id: 1177 },
+		{ ch: '绿色', en: 'green', id: 1178 },
+		{ ch: '两者都不', en: 'neither', id: 1179 },
+		{ ch: '溜，下降，滑落', en: 'slip', id: 1180 },
+		{ ch: '木材，木头', en: 'wood', id: 1181 },
+		{ ch: '莫斯科', en: 'Moscow', id: 1182 },
+		{ ch: '蓝，筐', en: 'basket', id: 1183 },
+		{ ch: '最坏的，最差的', en: 'worst', id: 1184 },
+		{ ch: '儿子，子孙', en: 'son', id: 1185 },
+		{ ch: '流感', en: 'flu', id: 1186 },
+		{ ch: '须，络腮胡子', en: 'beard', id: 1187 },
+		{ ch: '西方', en: 'west', id: 1188 }
 	]
 }
 
