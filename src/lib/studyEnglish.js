@@ -187,7 +187,27 @@ const goodsData = {
 		{ ch: '儿子，子孙', en: 'son', id: 1185 },
 		{ ch: '流感', en: 'flu', id: 1186 },
 		{ ch: '须，络腮胡子', en: 'beard', id: 1187 },
-		{ ch: '西方', en: 'west', id: 1188 }
+		{ ch: '西方', en: 'west', id: 1188 },
+		{ ch: '印度人', en: 'Indian', id: 1189 },
+		{ ch: '足球，橄榄球', en: 'football', id: 1190 },
+		{ ch: '方式，方法，途径，路', en: 'way', id: 1191 },
+		{ ch: '供应，奉献，主动提出，自愿给出', en: 'offer', id: 1192 },
+		{ ch: '中国，瓷器', en: 'china', id: 1193 },
+		{ ch: '十九', en: 'nineteen', id: 1194 },
+		{ ch: '巧克力', en: 'chocolate', id: 1195 },
+		{ ch: '东京', en: 'Tokyo', id: 1196 },
+		{ ch: '支持，在...后面', en: 'behind', id: 1197 },
+		{ ch: '橱柜，密室', en: 'cupboard', id: 1198 },
+		{ ch: '等待，期待', en: 'wait', id: 1199 },
+		{ ch: '成熟的', en: 'ricp', id: 1200 },
+		{ ch: '短语集', en: 'phrasebook', id: 1201 },
+		{ ch: '油漆', en: 'paint', id: 1202 },
+		{ ch: '可能', en: 'may', id: 1203 },
+		{ ch: '盘子，车牌，板', en: 'plate', id: 1204 },
+		{ ch: '飞行员', en: 'pilot', id: 1205 },
+		{ ch: '记者，通讯员', en: 'reporter', id: 1206 },
+		{ ch: '短语，词组，成语', en: 'phrase', id: 1207 },
+		{ ch: '生病', en: 'fell ill', id: 1208 }
 	]
 }
 

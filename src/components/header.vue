@@ -47,10 +47,11 @@
 
 <script>
 	import { request } from '../common_js/requestApi.js'
+	import BMap from 'BaiduMap'
 	export default {
 		created() {
 			this.init()
-			this.getData()
+			console.log(BMap)
 		},
 		data() {
 			return {
@@ -123,6 +124,7 @@
 				let s = parseInt(date.getSeconds()) < 10 ? ('0' + date.getSeconds()) : date.getSeconds()
 				this.nowTime = (year + '年' + mouth + '月' + da + '日  星期' + week + ' ' + h + ':' + m + ':' + s)
 			}, 1000)
+			this.getCity()
 		},
 		methods: {
 			init() {
@@ -145,11 +147,23 @@
 					this.$router.push(path)
 				}
 			},
-			async getData () {
-				let data = await request('https://www.apiopen.top/weatherApi?city=上海 ', 'get', {})
+			async getData (city) {
+				let data = await request('https://www.apiopen.top/weatherApi?city='+city, 'get', {})
 				console.log(data)
 				this.city = data.data.city
+				data.data.forecast[0].fengli = (data.data.forecast[0].fengli).substring(9, (data.data.forecast[0].fengli).length-3)
 				this.weather = data.data.forecast[0]
+			},
+			getCity () {
+				let self = this
+				let geolocation = new BMap.Geolocation()
+				geolocation.getCurrentPosition(function getinfo(position){
+					let city = position.address.city
+					self.city = city.substring(0, city.length-1)
+					self.getData(self.city)
+				}, function (e) {
+					self.city = '定位失败'
+				}, {provider: 'baidu'})
 			}
 		},
 		beforeDestroy() {
