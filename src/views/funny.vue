@@ -10,7 +10,7 @@
 				</div>
 				<div class="inner">
 					<ul>
-						<li v-for="(val,i) in funnyList" :key="i">
+						<li v-for="(val,i) in funnyList" :key="i" v-if="val.videouri !== ''">
 							<div class="inner-info">
 								<div class="info-img">
 									<img :src="val.profile_image"/>
@@ -23,7 +23,7 @@
 							<div class="inner-content">
 								<div>{{val.text}}</div>
 								<div class="video-box">
-							        <video muted width="50%" height="300" loop  controls='controls'>
+							        <video width="50%" height="300" preload controls='controls'>
 							        	<source :src="val.videouri" type="video/mp4">
 							        </video>
 							    </div>
