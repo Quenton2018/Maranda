@@ -93,6 +93,14 @@
 						}]
 					},
 					{
+						title: '放松一下',
+						path: '',
+						children: [{
+							title: '有趣段子',
+							path: './funny'
+						}]
+					},
+					{
 						title: '心灵聆听',
 						path: '',
 						children: [{
