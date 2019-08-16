@@ -11,7 +11,23 @@
 				<div class="inner">
 					<ul>
 						<li v-for="(val,i) in funnyList" :key="i">
-							<span>{{i+1}}, {{val.text}}</span>
+							<div class="inner-info">
+								<div class="info-img">
+									<img :src="val.profile_image"/>
+								</div>
+								<div class="info-name">
+									<div class="user-name">{{val.name}}</div>
+									<div class="user-passtime">{{val.passtime}}</div>
+								</div>
+							</div>
+							<div class="inner-content">
+								<div>{{val.text}}</div>
+								<div class="video-box">
+							        <video muted width="50%" height="300" loop  controls='controls'>
+							        	<source :src="val.videouri" type="video/mp4">
+							        </video>
+							    </div>
+							</div>
 						</li>
 					</ul>
 					<Spin size="large" fix v-if="spinShow"></Spin>
@@ -23,9 +39,11 @@
 
 <script>
 	import { request } from '../common_js/requestApi.js'
+	
 	export default {
 		created () {
 			this.init()
+			console.log(this.$video)
 		},
 		data () {
 			return {
@@ -90,4 +108,48 @@
 		background: #fff;
 		margin-bottom: 15px;
 	}
+	
+	.inner-info {
+		display: flex;
+		justify-content: flex-start;
+		color: #000;
+	}
+	
+	.info-img {
+		width: 50px;
+		height: 50px;
+		overflow: hidden;
+		border-radius: 50%;
+		margin-right: 8px;
+	}
+	
+	.info-img img {
+		width: 100%;
+		height: 100%;
+	}
+	
+	.info-name {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	
+	.user-name {
+		font-size: 16px;
+		font-weight: 700;
+	}
+	
+	.user-passtime {
+		color: #17233D;
+	}
+	
+	.inner-content {
+		margin: 8px 0;
+		color: #000;
+	}
+	
+	.video-box {
+		margin: 15px 0;
+	}
+	
 </style>

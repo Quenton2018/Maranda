@@ -4,11 +4,15 @@ import App from './App'
 import router from './router'
 import store from './store'
 import iView from 'iview'
+import Video from 'video.js'
+import 'video.js/dist/video-js.css'
 import 'iview/dist/styles/iview.css'
 import './assets/css/common.css'
 
 Vue.config.productionTip = false
 Vue.use(iView)
+
+Vue.prototype.$video = Video
 
 request.setConfig({
 	beforeError (_, reject) {
