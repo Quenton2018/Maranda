@@ -207,7 +207,27 @@ const goodsData = {
 		{ ch: '飞行员', en: 'pilot', id: 1205 },
 		{ ch: '记者，通讯员', en: 'reporter', id: 1206 },
 		{ ch: '短语，词组，成语', en: 'phrase', id: 1207 },
-		{ ch: '生病', en: 'fell ill', id: 1208 }
+		{ ch: '生病', en: 'fell ill', id: 1208 },
+		{ ch: '二十几', en: 'twenty', id: 1209 },
+		{ ch: '拿，需要，接受，吃', en: 'take', id: 1210 },
+		{ ch: '母亲', en: 'mother', id: 1211 },
+		{ ch: '中间，中心', en: 'middle', id: 1212 },
+		{ ch: '进入，进去，加入，进来', en: 'enter', id: 1213 },
+		{ ch: '忘记，遗忘', en: 'forget', id: 1214 },
+		{ ch: '年，年度，年纪，年龄', en: 'year', id: 1215 },
+		{ ch: '周二', en: 'Tuesday', id: 1216 },
+		{ ch: '他的', en: 'his', id: 1217 },
+		{ ch: '拐弯抹角', en: 'mince words', id: 1218 },
+		{ ch: '上菜', en: 'dish up', id: 1219 },
+		{ ch: '任命，委派，约会，预约', en: 'appointment', id: 1220 },
+		{ ch: '装轮胎', en: 'tyre', id: 1221 },
+		{ ch: '令人愉快的，宜人的', en: 'pleasant', id: 1222 },
+		{ ch: '十月', en: 'October', id: 1223 },
+		{ ch: '气候，风气', en: 'climate', id: 1224 },
+		{ ch: '建议，意见', en: 'advice', id: 1225 },
+		{ ch: '灯杆', en: 'lamp-post', id: 1226 },
+		{ ch: '累的，疲劳的', en: 'tired', id: 1227 },
+		{ ch: '吃一片阿司匹林', en: 'take an aspirin', id: 1228 }
 	]
 }
 
