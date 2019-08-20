@@ -130,6 +130,29 @@
 				let h = parseInt(date.getHours()) < 10 ? ('0' + date.getHours()) : date.getHours()
 				let m = parseInt(date.getMinutes()) < 10 ? ('0' + date.getMinutes()) : date.getMinutes()
 				let s = parseInt(date.getSeconds()) < 10 ? ('0' + date.getSeconds()) : date.getSeconds()
+				switch (week) {
+					case 0:
+						week = '天'
+						break
+					case 1:
+						week = '一'
+						break
+					case 2:
+						week = '二'
+						break
+					case 3:
+						week = '三'
+						break
+					case 4:
+						week = '四'
+						break
+					case 5:
+						week = '五'
+						break
+					case 6:
+						week = '六'
+						break
+				}
 				this.nowTime = (year + '年' + mouth + '月' + da + '日  星期' + week + ' ' + h + ':' + m + ':' + s)
 			}, 1000)
 			this.getCity()
