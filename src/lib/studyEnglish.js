@@ -227,7 +227,30 @@ const goodsData = {
 		{ ch: '建议，意见', en: 'advice', id: 1225 },
 		{ ch: '灯杆', en: 'lamp-post', id: 1226 },
 		{ ch: '累的，疲劳的', en: 'tired', id: 1227 },
-		{ ch: '吃一片阿司匹林', en: 'take an aspirin', id: 1228 }
+		{ ch: '吃一片阿司匹林', en: 'take an aspirin', id: 1228 },
+		{ ch: '（我）是', en: 'am', id: 1229 },
+		{ ch: '十四', en: 'fourteen', id: 1230 },
+		{ ch: '根据，小于，不足，在..下面', en: 'under', id: 1231 },
+		{ ch: '计算器，柜台，操作台，反对', en: 'counter', id: 1232 },
+		{ ch: '违反，背道而驰', en: 'run counter to', id: 1233 },
+		{ ch: '要，希望，想要', en: 'want', id: 1234 },
+		{ ch: '国家，乡村', en: 'country', id: 1235 },
+		{ ch: '票，券', en: 'ticket', id: 1236 },
+		{ ch: '时间', en: 'time', id: 1237 },
+		{ ch: '哪个', en: 'which', id: 1238 },
+		{ ch: '竞赛，婚姻，满足，火柴，', en: 'match', id: 1239 },
+		{ ch: '茶壶', en: 'teapot', id: 1240 },
+		{ ch: '存款，押金，堆积物', en: 'deposit', id: 1241 },
+		{ ch: '小偷，贼', en: 'thief', id: 1242 },
+		{ ch: '相信，认定', en: 'believe', id: 1243 },
+		{ ch: '我十分相信', en: 'I quite believe', id: 1244 },
+		{ ch: '人种，种族，赛跑，竞争', en: 'race', id: 1245 },
+		{ ch: '黄种人', en: 'yellow race', id: 1246 },
+		{ ch: '苏格兰威士忌酒', en: 'Scotch whisky', id: 1247 },
+		{ ch: '怜悯，同情，遗憾', en: 'pity', id: 1248 },
+		{ ch: '受伤，感到疼痛，使不快', en: 'hurt', id: 1249 },
+		{ ch: '发生于', en: 'happen to', id: 1250 },
+		{ ch: '希腊', en: 'Greece', id: 1251 }
 	]
 }
 
