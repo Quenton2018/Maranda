@@ -42,16 +42,21 @@
 		<BackTop :height="100" :bottom="200">
 	        <div class="back-top"></div>
 	    </BackTop>
+	    <Login></Login>
 	</div>
 </template>
 
 <script>
 	import { request } from '../common_js/requestApi.js'
 	import BMap from 'BaiduMap'
+	import Login from '../views/login.vue'
 	export default {
 		created() {
 			this.init()
 			console.log(BMap)
+		},
+		components: {
+			Login
 		},
 		data() {
 			return {
@@ -214,7 +219,7 @@
 		background: rgba(255, 255, 255, 0.7);
 		position: fixed;
 		top: 0;
-		z-index: 999;
+		z-index: 900;
 		box-shadow: #333 0 2px 2px;
 		text-align: center;
 		font-size: 14px;
