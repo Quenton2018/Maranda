@@ -20,7 +20,7 @@
 					<div style="margin-left: 8px;">
 						<Button type="primary" icon="ios-search">搜索</Button>
 					</div>
-					<div style="margin-left: 8px;" @click="isLogin=true">
+					<div v-if="LoginFlag" style="margin-left: 8px;" @click="isLogin=true">
 						<Button type="primary" icon="md-person">请登录</Button>
 					</div>
 				</div>
@@ -66,6 +66,7 @@
 		data() {
 			return {
 				isLogin: false,
+				LoginFlag: true,
 				member: '相见是缘，感谢您的光临！',
 				index: 0,
 				tagFixed: false,
@@ -189,6 +190,7 @@
 					login = login.replace(/(\d{3})\d{4}(\d{4})/,"$1****$2")
 					if (login) {
 						this.member = '尊敬的'+login+'会员，欢迎回家！'
+						this.LoginFlag = false
 					}
 				}
 			},
