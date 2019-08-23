@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div class="topnav">
-			相见是缘，感谢您的光临！
+			{{member}}
 			<span class="now-time" v-html="nowTime"></span>
 			<div class="weather">
 				<span>所在城市：{{city}}&nbsp;&nbsp;</span>
@@ -21,7 +21,7 @@
 						<Button type="primary" icon="ios-search">搜索</Button>
 					</div>
 					<div style="margin-left: 8px;" @click="isLogin=true">
-						<Button type="primary" icon="md-person">登录</Button>
+						<Button type="primary" icon="md-person">请登录</Button>
 					</div>
 				</div>
 			</div>
@@ -45,7 +45,7 @@
 		<BackTop :height="100" :bottom="200">
 	        <div class="back-top"></div>
 	    </BackTop>
-	    <Login v-if="isLogin" @isLogin="getUser" @closeLogin="isLogin=false"></Login>
+	    <Login v-if="isLogin" @isLogin="refresh" @closeLogin="isLogin=false"></Login>
 	</div>
 </template>
 
@@ -58,12 +58,15 @@
 			this.init()
 			console.log(BMap)
 		},
+		name: 'refresh',
+		inject: ['reload'],
 		components: {
 			Login
 		},
 		data() {
 			return {
 				isLogin: false,
+				member: '相见是缘，感谢您的光临！',
 				index: 0,
 				tagFixed: false,
 				nowTime: null,
@@ -178,6 +181,16 @@
 						}
 					}
 				}
+				this.checkLogin()
+			},
+			checkLogin () {
+				let login = sessionStorage.getItem('isLogin')
+				if (login) {
+					login = login.replace(/(\d{3})\d{4}(\d{4})/,"$1****$2")
+					if (login) {
+						this.member = '尊敬的'+login+'会员，欢迎回家！'
+					}
+				}
 			},
 			goPage(i) {
 				this.index = i
@@ -205,9 +218,10 @@
 					self.city = '定位失败'
 				}, {provider: 'baidu'})
 			},
-			getUser () {
-				this.isLogin = false
-			}
+			refresh () {
+                this.reload()
+                this.isLogin = false
+          	}
 		},
 		beforeDestroy() {
 			if(this.timer) {

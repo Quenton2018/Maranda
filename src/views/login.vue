@@ -67,6 +67,7 @@
 	            		let data = await request('https://www.apiopen.top/login?', 'get', this.formInline)
 	            		this.$Message.success('登录成功!');
 	            		this.$emit('isLogin')
+	            		sessionStorage.setItem('isLogin', this.formInline.phone)
 	            		this.isLoading = false
 	            	} catch (e) {
 	            		this.isLoading = false
