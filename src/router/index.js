@@ -7,6 +7,7 @@ import studyEnglish from '../views/studyEnglish.vue'
 import Sports from '../views/sports.vue'
 import Funny from '../views/funny.vue'
 import Login from '../views/login.vue'
+import UserInfo from '../views/userInfo.vue'
 
 export default new Router({
   routes: [
@@ -29,6 +30,10 @@ export default new Router({
     {
     	path: '/login',
     	component: Login
+    },
+    {
+    	path: '/userInfo',
+    	component: UserInfo
     }
   ]
 })

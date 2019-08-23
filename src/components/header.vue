@@ -23,15 +23,12 @@
 					<div v-if="LoginFlag" style="margin-left: 8px;" @click="isLogin=true">
 						<Button type="primary" icon="md-person">请登录</Button>
 					</div>
-					<div v-if="myFlag" style="margin-left: 8px;">
-						<Button type="primary" icon="md-person">我的</Button>
-					</div>
 				</div>
 			</div>
 		</div>
 		<div class="menu-wrap">
 			<div class="menu">
-				<div class="nav-list" v-for="(val,i) in navList" :key="i">
+				<div class="nav-list" v-for="(val,i) in navList" :key="i" v-if="val.isVip">
 					<router-link :to='{path:val.path}'>
 						<div class="list-fa">
 							<span :class="i===index?'nav-active':''" @click='goPage(i)'>{{val.title}}</span>
@@ -71,6 +68,7 @@
 				isLogin: false,
 				LoginFlag: true,
 				myFlag: false,
+				isShowMyView: false,
 				member: '相见是缘，感谢您的光临！',
 				index: 0,
 				tagFixed: false,
@@ -80,6 +78,7 @@
 				navList: [{
 						title: '首页',
 						path: '/',
+						isVip: true,
 						children: [{
 							title: '',
 							path: ''
@@ -88,6 +87,7 @@
 					{
 						title: '学无止境',
 						path: '',
+						isVip: true,
 						children: [{
 							title: '学习英语',
 							path: './studyEnglish'
@@ -96,6 +96,7 @@
 					{
 						title: '随笔',
 						path: '',
+						isVip: true,
 						children: [{
 							title: '听心语',
 							path: ''
@@ -104,6 +105,7 @@
 					{
 						title: '发现生活',
 						path: '',
+						isVip: true,
 						children: [{
 							title: '我的运动',
 							path: './sprots'
@@ -112,6 +114,7 @@
 					{
 						title: '放松一下',
 						path: '',
+						isVip: true,
 						children: [{
 							title: '有趣段子',
 							path: './funny'
@@ -120,6 +123,7 @@
 					{
 						title: '心灵聆听',
 						path: '',
+						isVip: true,
 						children: [{
 							title: '听风吟',
 							path: ''
@@ -128,9 +132,19 @@
 					{
 						title: '技术支持',
 						path: '',
+						isVip: true,
 						children: [{
 							title: 'html',
 							path: ''
+						}]
+					},
+					{
+						title: '个人中心',
+						path: '',
+						isVip: false,
+						children: [{
+							title: '最好的我们',
+							path: './userInfo'
 						}]
 					}
 				]
@@ -195,9 +209,15 @@
 					this.member = '尊敬的'+login+'会员，欢迎回家！'
 					this.LoginFlag = false
 					console.log(login)
-					if (login === '151****2690') {
+					if (login === '151****2690' || login === '183****8976') {
 						this.myFlag = true
+						this.showMy()
 					}
+				}
+			},
+			showMy () {
+				for (let i = 0, len = this.navList.length; i < len; i++) {
+					this.navList[7].isVip = true
 				}
 			},
 			goPage(i) {
@@ -368,6 +388,16 @@
 	}
 	
 	.back-top:hover {
+		cursor: pointer;
+	}
+	
+	.user-info {
+		font-size: 20px;
+		font-weight: bold;
+		color: #000;
+	}
+	
+	.user-info:hover {
 		cursor: pointer;
 	}
 </style>
