@@ -42,7 +42,7 @@
 		<BackTop :height="100" :bottom="200">
 	        <div class="back-top"></div>
 	    </BackTop>
-	    <Login></Login>
+	    <Login v-if="isLogin"></Login>
 	</div>
 </template>
 
@@ -60,6 +60,7 @@
 		},
 		data() {
 			return {
+				isLogin: false,
 				index: 0,
 				tagFixed: false,
 				nowTime: null,
