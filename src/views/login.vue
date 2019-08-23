@@ -25,6 +25,7 @@
 
 <script>
 	import { request } from '../common_js/requestApi.js'
+	const isPhone = /^(1)\d{10}$/i
 	
 	export default {
 		data () {
@@ -54,6 +55,10 @@
 			handleSubmit(name) {
                 this.$refs[name].validate((valid) => {
                     if (valid) {
+                    	if (!isPhone.test(this.formInline.phone)) {
+					        this.$Message.error('手机格式错误')
+					        return false
+					    }
                         this.submit()
                     } else {
                         this.$Message.error('请填完正确的信息!');
