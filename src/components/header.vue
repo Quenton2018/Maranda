@@ -23,6 +23,9 @@
 					<div v-if="LoginFlag" style="margin-left: 8px;" @click="isLogin=true">
 						<Button type="primary" icon="md-person">请登录</Button>
 					</div>
+					<div v-if="myFlag" style="margin-left: 8px;">
+						<Button type="primary" icon="md-person">我的</Button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -67,6 +70,7 @@
 			return {
 				isLogin: false,
 				LoginFlag: true,
+				myFlag: false,
 				member: '相见是缘，感谢您的光临！',
 				index: 0,
 				tagFixed: false,
@@ -188,9 +192,11 @@
 				let login = sessionStorage.getItem('isLogin')
 				if (login) {
 					login = login.replace(/(\d{3})\d{4}(\d{4})/,"$1****$2")
-					if (login) {
-						this.member = '尊敬的'+login+'会员，欢迎回家！'
-						this.LoginFlag = false
+					this.member = '尊敬的'+login+'会员，欢迎回家！'
+					this.LoginFlag = false
+					console.log(login)
+					if (login === '151****2690') {
+						this.myFlag = true
 					}
 				}
 			},
