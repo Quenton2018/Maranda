@@ -20,6 +20,9 @@
 					<div style="margin-left: 8px;">
 						<Button type="primary" icon="ios-search">搜索</Button>
 					</div>
+					<div style="margin-left: 8px;" @click="isLogin=true">
+						<Button type="primary" icon="md-person">登录</Button>
+					</div>
 				</div>
 			</div>
 		</div>
