@@ -18,16 +18,18 @@ request.setConfig({
 	beforeError (_, reject) {
 		iView.Message.error('网络连接错误')
     	reject()
+    	iView.LoadingBar.finish()
 	},
 	beforeSuccess (res, resolve, reject) {
+		iView.LoadingBar.start()
 	    if (res.data.code === 200) {
 	      	resolve(res.data)
 	    } else if (res.data.code === 401) {
-	    	iView.Message.warning(res.data.message || '请登录')
+	    	iView.Message.warning(res.data.msg || '请登录')
 	    	router.push({ path: '/login' })
 	      	reject()
-	    } else if (res.data.code === 403) {
-	    	iView.Message.warning(res.data.message || '没有权限')
+	    } else if (res.data.code === 202) {
+	    	iView.Message.warning(res.data.msg || '已注册')
 	      	reject(res)
 	    } else if (res.data.code === 10001) {
 	      	reject(res)
@@ -35,6 +37,7 @@ request.setConfig({
 	    	iView.Message.warning(res.data.message)
 	      	reject(res)
 	    }
+	    iView.LoadingBar.finish()
 	}
 })
 

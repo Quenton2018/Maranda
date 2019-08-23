@@ -4,7 +4,7 @@
 			相见是缘，感谢您的光临！
 			<span class="now-time" v-html="nowTime"></span>
 			<div class="weather">
-				<span>所在城市：{{city}}, </span>
+				<span>所在城市：{{city}}&nbsp;&nbsp;</span>
 				<span>{{weather.type}} {{weather.high}} {{weather.low}} {{weather.fengxiang}} {{weather.fengli}}</span>
 			</div>
 		</div>
@@ -42,7 +42,7 @@
 		<BackTop :height="100" :bottom="200">
 	        <div class="back-top"></div>
 	    </BackTop>
-	    <Login v-if="isLogin"></Login>
+	    <Login v-if="isLogin" @isLogin="getUser" @closeLogin="isLogin=false"></Login>
 	</div>
 </template>
 
@@ -201,6 +201,9 @@
 				}, function (e) {
 					self.city = '定位失败'
 				}, {provider: 'baidu'})
+			},
+			getUser () {
+				this.isLogin = false
 			}
 		},
 		beforeDestroy() {
