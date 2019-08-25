@@ -229,6 +229,100 @@ const goodsData = {
     { id: 16, name: '网络安全' },
     { id: 17, name: '区块链' },
     { id: 18, name: '活动' }
+  ],
+  navList: [
+  	{
+			title: '首页',
+			path: '/',
+			isVip: true,
+			children: [
+				{
+					title: '',
+					path: ''
+				}
+			]
+		},
+		{
+			title: '学无止境',
+			path: '',
+			isVip: true,
+			children: [
+				{
+					title: '学习英语',
+					path: './studyEnglish'
+				}
+			]
+		},
+		{
+			title: '随笔',
+			path: '',
+			isVip: true,
+			children: [
+				{
+					title: '听心语',
+					path: ''
+				}
+			]
+		},
+		{
+			title: '发现生活',
+			path: '',
+			isVip: true,
+			children: [
+				{
+					title: '我的运动',
+					path: './sprots'
+				}
+			]
+		},
+		{
+			title: '放松一下',
+			path: '',
+			isVip: true,
+			children: [
+				{
+					title: '有趣段子',
+					path: './funny'
+				}
+			]
+		},
+		{
+			title: '心灵聆听',
+			path: '',
+			isVip: true,
+			children: [
+				{
+					title: '听风吟',
+					path: ''
+				}
+			]
+		},
+		{
+			title: '技术支持',
+			path: '',
+			isVip: true,
+			children: [
+				{
+					title: 'html',
+					path: ''
+				}
+			]
+		},
+		{
+			title: '个人中心',
+			path: '',
+			isVip: false,
+			children: [
+				{
+					title: '最好的我们',
+					path: './userInfo'
+				},
+				{
+					title: '我的太阳',
+					path: ''
+				}
+			]
+		}
   ]
 }
 

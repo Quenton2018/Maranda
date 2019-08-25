@@ -50,13 +50,14 @@
 </template>
 
 <script>
+	import goodsData from '../lib/newGoodsData.js'
 	import { request } from '../common_js/requestApi.js'
 	import BMap from 'BaiduMap'
 	import Login from '../views/login.vue'
 	export default {
 		created() {
+			this.navList = this.goodsData.navList
 			this.init()
-			console.log(BMap)
 		},
 		name: 'refresh',
 		inject: ['reload'],
@@ -65,89 +66,16 @@
 		},
 		data() {
 			return {
+				goodsData,
 				isLogin: false,
 				LoginFlag: true,
 				myFlag: false,
-				isShowMyView: false,
 				member: '相见是缘，感谢您的光临！',
 				index: 0,
 				tagFixed: false,
 				nowTime: null,
 				weather: {},
-				city: '',
-				navList: [{
-						title: '首页',
-						path: '/',
-						isVip: true,
-						children: [{
-							title: '',
-							path: ''
-						}]
-					},
-					{
-						title: '学无止境',
-						path: '',
-						isVip: true,
-						children: [{
-							title: '学习英语',
-							path: './studyEnglish'
-						}]
-					},
-					{
-						title: '随笔',
-						path: '',
-						isVip: true,
-						children: [{
-							title: '听心语',
-							path: ''
-						}]
-					},
-					{
-						title: '发现生活',
-						path: '',
-						isVip: true,
-						children: [{
-							title: '我的运动',
-							path: './sprots'
-						}]
-					},
-					{
-						title: '放松一下',
-						path: '',
-						isVip: true,
-						children: [{
-							title: '有趣段子',
-							path: './funny'
-						}]
-					},
-					{
-						title: '心灵聆听',
-						path: '',
-						isVip: true,
-						children: [{
-							title: '听风吟',
-							path: ''
-						}]
-					},
-					{
-						title: '技术支持',
-						path: '',
-						isVip: true,
-						children: [{
-							title: 'html',
-							path: ''
-						}]
-					},
-					{
-						title: '个人中心',
-						path: '',
-						isVip: false,
-						children: [{
-							title: '最好的我们',
-							path: './userInfo'
-						}]
-					}
-				]
+				city: ''
 			}
 		},
 		mounted() {
