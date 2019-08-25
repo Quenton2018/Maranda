@@ -1,9 +1,9 @@
 <template>
 	<div class="content-wrap">
 		<div class="content">
-		    <div class="inner">
-		    	<!--<div>这里将会是我们的童话</div>-->
-		    </div>
+			<div class="inner">
+				<!--<div>这里将会是我们的童话</div>-->
+			</div>
 		</div>
 		<div class="mask-wrap" v-if="isShowNowMsk === 'LOVE'">
 			<div class="mask">
@@ -16,7 +16,7 @@
 				<span>{{loveTime}}</span>
 				天
 			</h2>
-			<img class="close-mask" @click="isShowNowMsk = null" src="https://qiniuyun.quenton.cn/Maranda/img/close.png"/>
+			<img class="close-mask" @click="isShowNowMsk = null" src="https://qiniuyun.quenton.cn/Maranda/img/close.png" />
 		</div>
 	</div>
 </template>
@@ -24,10 +24,10 @@
 <script>
 	import goodsData from '../lib/thankYou.js'
 	export default {
-		created () {
+		created() {
 			this.init()
 		},
-		data () {
+		data() {
 			return {
 				goodsData,
 				loveTime: '',
@@ -35,10 +35,10 @@
 			}
 		},
 		methods: {
-			init () {
+			init() {
 				let late = Date.parse(new Date(2014, 6, 1))
 				let now = Date.parse(new Date())
-				let loveTime = Math.abs(parseInt((now - late)/1000/3600/24))
+				let loveTime = Math.abs(parseInt((now - late) / 1000 / 3600 / 24))
 				this.loveTime = loveTime
 			}
 		}
@@ -53,7 +53,7 @@
 		left: 0;
 		top: 0;
 		z-index: 520;
-		background-image: url(https://qiniuyun.quenton.cn/Maranda/img/pc-bg-mog181220170551.jpg) ;
+		background-image: url(https://qiniuyun.quenton.cn/Maranda/img/pc-bg-mog181220170551.jpg);
 		background-size: cover;
 		padding-top: 42px;
 	}
@@ -71,7 +71,7 @@
 	.mask-wrap {
 		width: 800px;
 		height: 500px;
-		background-image: url(https://qiniuyun.quenton.cn/Maranda/img/20181219154222_gWD6CS7bxN.jpg) ;
+		background-image: url(https://qiniuyun.quenton.cn/Maranda/img/20181219154222_gWD6CS7bxN.jpg);
 		background-size: cover;
 		position: fixed;
 		top: 0;
