@@ -250,7 +250,28 @@ const goodsData = {
 		{ ch: '怜悯，同情，遗憾', en: 'pity', id: 1248 },
 		{ ch: '受伤，感到疼痛，使不快', en: 'hurt', id: 1249 },
 		{ ch: '发生于', en: 'happen to', id: 1250 },
-		{ ch: '希腊', en: 'Greece', id: 1251 }
+		{ ch: '希腊', en: 'Greece', id: 1251 },
+		{ ch: '打包，收拾行李', en: 'pack', id: 1252 },
+		{ ch: '茶', en: 'tea', id: 1253 },
+		{ ch: '享受，欣赏', en: 'enjoy', id: 1254 },
+		{ ch: '希腊', en: 'Greece', id: 1255 },
+		{ ch: '关掉', en: 'turn off', id: 1256 },
+		{ ch: '严格的，精确地', en: 'exact', id: 1257 },
+		{ ch: '第二十二', en: 'twenty-second', id: 1258 },
+		{ ch: '几乎，差不多', en: 'nearly', id: 1259 },
+		{ ch: '泡茶', en: 'make the tea', id: 1260 },
+		{ ch: '男警察', en: 'policeman', id: 1261 },
+		{ ch: '如，喜欢', en: 'like', id: 1262 },
+		{ ch: '公司，陪伴', en: 'company', id: 1263 },
+		{ ch: '大多数', en: 'most', id: 1264 },
+		{ ch: '十七', en: 'seveteen', id: 1265 },
+		{ ch: '扶手椅', en: 'armchair', id: 1266 },
+		{ ch: '饼干', en: 'biscuit', id: 1267 },
+		{ ch: '地方，位置', en: 'place', id: 1268 },
+		{ ch: '土耳其，火鸡', en: 'turkey', id: 1269 },
+		{ ch: '黄油', en: 'butter', id: 1270 },
+		{ ch: '技工，机修工', en: 'mechanic', id: 1271 },
+		{ ch: '柠檬饮料', en: 'lemonade', id: 1272 }
 	]
 }
 
