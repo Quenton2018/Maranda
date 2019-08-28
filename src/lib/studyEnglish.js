@@ -271,7 +271,30 @@ const goodsData = {
 		{ ch: '土耳其，火鸡', en: 'turkey', id: 1269 },
 		{ ch: '黄油', en: 'butter', id: 1270 },
 		{ ch: '技工，机修工', en: 'mechanic', id: 1271 },
-		{ ch: '柠檬饮料', en: 'lemonade', id: 1272 }
+		{ ch: '柠檬饮料', en: 'lemonade', id: 1272 },
+		{ ch: '在哪里', en: 'where', id: 1273 },
+		{ ch: '第十七', en: 'seventeenth', id: 1274 },
+		{ ch: '失去，丢失', en: 'lose', id: 1275 },
+		{ ch: '地板，地面，楼层，底价', en: 'floor', id: 1276 },
+		{ ch: '邮差员', en: 'postman', id: 1277 },
+		{ ch: '晚上', en: 'night', id: 1278 },
+		{ ch: '担心的', en: 'worried', id: 1279 },
+		{ ch: '顶部', en: 'top', id: 1280 },
+		{ ch: '春天', en: 'spring', id: 1281 },
+		{ ch: '四月', en: 'April', id: 1282 },
+		{ ch: '举起', en: 'lift', id: 1283 },
+		{ ch: '能载我一程吗', en: 'can you give me a lift', id: 1284 },
+		{ ch: '第一', en: 'first', id: 1285 },
+		{ ch: '噪声', en: 'noise', id: 1286 },
+		{ ch: '错误，失策', en: 'mistake', id: 1287 },
+		{ ch: '书桌，办公桌', en: 'desk', id: 1288 },
+		{ ch: '词典，字典', en: 'dictionary', id: 1289 },
+		{ ch: '护士，保姆，培养', en: 'nurse', id: 1290 },
+		{ ch: '水壶', en: 'kettle', id: 1291 },
+		{ ch: '血管', en: 'vas', id: 1292 },
+		{ ch: '花瓶', en: 'vase', id: 1293 },
+		{ ch: '广阔的', en: 'vast', id: 1294 },
+		{ ch: '豆，豆科植物', en: 'bean', id: 1295 }
 	]
 }
 
