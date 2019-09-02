@@ -294,7 +294,29 @@ const goodsData = {
 		{ ch: '血管', en: 'vas', id: 1292 },
 		{ ch: '花瓶', en: 'vase', id: 1293 },
 		{ ch: '广阔的', en: 'vast', id: 1294 },
-		{ ch: '豆，豆科植物', en: 'bean', id: 1295 }
+		{ ch: '豆，豆科植物', en: 'bean', id: 1295 },
+		{ ch: '商店', en: 'shop', id: 1296 },
+		{ ch: '丑陋的', en: 'ugly', id: 1297 },
+		{ ch: '返回', en: 'back', id: 1298 },
+		{ ch: '有时', en: 'sometimes', id: 1299 },
+		{ ch: '任何人', en: 'anyone', id: 1300 },
+		{ ch: '希望', en: 'hope', id: 1301 },
+		{ ch: '打电话', en: 'call', id: 1302 },
+		{ ch: '厨房', en: 'kitchen', id: 1303 },
+		{ ch: '挪威', en: 'Norway', id: 1304 },
+		{ ch: '第七，七分之一', en: 'seventh', id: 1305 },
+		{ ch: '猫', en: 'cat', id: 1306 },
+		{ ch: '攀岩，爬', en: 'climb', id: 1307 },
+		{ ch: '最好', en: 'had better', id: 1308 },
+		{ ch: '口袋', en: 'pocket', id: 1309 },
+		{ ch: '百万富翁', en: 'millionaire', id: 1310 },
+		{ ch: '不久', en: 'soon', id: 1311 },
+		{ ch: '护照，凭证', en: 'passport', id: 1312 },
+		{ ch: '日内瓦', en: 'Geneva', id: 1313 },
+		{ ch: '碰巧，发现', en: 'run across', id: 1314 },
+		{ ch: '碰巧，发现', en: 'Come across', id: 1315 },
+		{ ch: '他碰巧见到张三', en: 'she happened to run across Zhang San', id: 1316 },
+		{ ch: '莴苣', en: 'lettuce', id: 1317 }
 	]
 }
 
