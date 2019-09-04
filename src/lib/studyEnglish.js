@@ -316,7 +316,27 @@ const goodsData = {
 		{ ch: '碰巧，发现', en: 'run across', id: 1314 },
 		{ ch: '碰巧，发现', en: 'Come across', id: 1315 },
 		{ ch: '他碰巧见到张三', en: 'she happened to run across Zhang San', id: 1316 },
-		{ ch: '莴苣', en: 'lettuce', id: 1317 }
+		{ ch: '莴苣', en: 'lettuce', id: 1317 },
+		{ ch: '十二月', en: 'December', id: 1318 },
+		{ ch: '纽约', en: 'New York', id: 1319 },
+		{ ch: '夏天', en: 'summer', id: 1320 },
+		{ ch: '瑞典', en: 'Sweden', id: 1321 },
+		{ ch: '微小的', en: 'mini', id: 1322 },
+		{ ch: '第六', en: 'sixth', id: 1323 },
+		{ ch: '一起', en: 'together', id: 1324 },
+		{ ch: '东西，事物', en: 'thing', id: 1325 },
+		{ ch: '憎恨，讨厌', en: 'hate', id: 1326 },
+		{ ch: '肮脏的', en: 'dirty', id: 1327 },
+		{ ch: '军官，主任', en: 'officer', id: 1328 },
+		{ ch: '哎呦', en: 'ow', id: 1329 },
+		{ ch: '操作员', en: 'operator', id: 1330 },
+		{ ch: '便士', en: 'pence', id: 1331 },
+		{ ch: '豌豆', en: 'pea', id: 1332 },
+		{ ch: '面包，钱', en: 'bread', id: 1333 },
+		{ ch: '泰国', en: 'Thai', id: 1334 },
+		{ ch: '店员', en: 'shop assistant', id: 1335 },
+		{ ch: '经常的，有规律的', en: 'regularly', id: 1336 },
+		{ ch: '肥胖的', en: 'fat', id: 1337 }
 	]
 }
 
