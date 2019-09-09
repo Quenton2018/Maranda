@@ -336,7 +336,27 @@ const goodsData = {
 		{ ch: '泰国', en: 'Thai', id: 1334 },
 		{ ch: '店员', en: 'shop assistant', id: 1335 },
 		{ ch: '经常的，有规律的', en: 'regularly', id: 1336 },
-		{ ch: '肥胖的', en: 'fat', id: 1337 }
+		{ ch: '肥胖的', en: 'fat', id: 1337 },
+		{ ch: '聪明的，熟练的', en: 'clever', id: 1338 },
+		{ ch: '笔记', en: 'note', id: 1339 },
+		{ ch: '同一的', en: 'same', id: 1340 },
+		{ ch: '压制', en: 'sit on', id: 1341 },
+		{ ch: '在...期间', en: 'during', id: 1342 },
+		{ ch: '沃尔沃', en: 'volvo', id: 1343 },
+		{ ch: '泰国', en: 'Thailand', id: 1344 },
+		{ ch: '最好的', en: 'best', id: 1345 },
+		{ ch: '容易的', en: 'easy', id: 1346 },
+		{ ch: '办公室', en: 'office', id: 1347 },
+		{ ch: '任一的', en: 'any', id: 1348 },
+		{ ch: '回信', en: 'answer the letter', id: 1349 },
+		{ ch: '蓝色', en: 'blue', id: 1350 },
+		{ ch: '列车', en: 'train', id: 1351 },
+		{ ch: '六十', en: 'sixty', id: 1352 },
+		{ ch: '桃子', en: 'peach', id: 1353 },
+		{ ch: '粉笔', en: 'chalk', id: 1354 },
+		{ ch: '套装，诉求', en: 'suit', id: 1355 },
+		{ ch: '超速', en: 'speed limit', id: 1356 },
+		{ ch: '火炬，手电筒', en: 'torch', id: 1357 }
 	]
 }
 
