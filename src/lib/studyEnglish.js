@@ -356,7 +356,27 @@ const goodsData = {
 		{ ch: '粉笔', en: 'chalk', id: 1354 },
 		{ ch: '套装，诉求', en: 'suit', id: 1355 },
 		{ ch: '超速', en: 'speed limit', id: 1356 },
-		{ ch: '火炬，手电筒', en: 'torch', id: 1357 }
+		{ ch: '火炬，手电筒', en: 'torch', id: 1357 },
+		{ ch: '睡，入睡', en: 'sleep', id: 1358 },
+		{ ch: '浓咖啡', en: 'black coffee', id: 1359 },
+		{ ch: '再一次', en: 'again', id: 1360 },
+		{ ch: '飞', en: 'fly', id: 1361 },
+		{ ch: '妻子', en: 'wife', id: 1362 },
+		{ ch: '进入', en: 'go into', id: 1363 },
+		{ ch: '没有什么', en: 'nothing', id: 1364 },
+		{ ch: '保持', en: 'keep', id: 1365 },
+		{ ch: '在中午', en: 'at noon', id: 1366 },
+		{ ch: '六月', en: 'June', id: 1367 },
+		{ ch: '把..收起来，储存', en: 'put away', id: 1368 },
+		{ ch: '穿，佩戴，损耗', en: 'wear', id: 1369 },
+		{ ch: '身体探出', en: 'lean out of', id: 1370 },
+		{ ch: '前天', en: 'the day before yesterday', id: 1371 },
+		{ ch: '颜色', en: 'colour', id: 1372 },
+		{ ch: '餐', en: 'meal', id: 1373 },
+		{ ch: '一茶匙的量', en: 'teaspoonful', id: 1374 },
+		{ ch: '医学', en: 'medicine', id: 1375 },
+		{ ch: '花园', en: 'garden', id: 1376 },
+		{ ch: '不包括，除了', en: 'except', id: 1377 }
 	]
 }
 
