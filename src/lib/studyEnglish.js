@@ -398,6 +398,26 @@ const goodsData = {
 		{ ch: '英里', en: 'mile', id: 1356 },
 		{ ch: '女演员', en: 'actress', id: 1357 },
 		{ ch: '小的', en: 'small', id: 1358 },
+		{ ch: '坐下', en: 'sit down', id: 1359 },
+		{ ch: '赢', en: 'win', id: 1360 },
+		{ ch: '时尚', en: 'fashion', id: 1361 },
+		{ ch: '请', en: 'please', id: 1362 },
+		{ ch: '手', en: 'hand', id: 1363 },
+		{ ch: '变化', en: 'change', id: 1364 },
+		{ ch: '线', en: 'line', id: 1365 },
+		{ ch: '做家务', en: 'homework', id: 1366 },
+		{ ch: '有趣的，滑稽的', en: 'funny', id: 1367 },
+		{ ch: '其余人', en: 'The rest', id: 1368 },
+		{ ch: '手提箱', en: 'suitcase', id: 1369 },
+		{ ch: '车站', en: 'station', id: 1370 },
+		{ ch: '英格兰', en: 'England', id: 1371 },
+		{ ch: '一月', en: 'January', id: 1372 },
+		{ ch: '听见', en: 'hear', id: 1373 },
+		{ ch: '电影', en: 'film', id: 1374 },
+		{ ch: '骨头，鱼刺', en: 'bone', id: 1375 },
+		{ ch: '整洁的', en: 'tidy', id: 1376 },
+		{ ch: '贫穷的', en: 'poor', id: 1377 },
+		{ ch: '电视', en: 'television', id: 1378 }
 	]
 }
 
