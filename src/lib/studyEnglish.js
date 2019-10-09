@@ -417,7 +417,27 @@ const goodsData = {
 		{ ch: '骨头，鱼刺', en: 'bone', id: 1375 },
 		{ ch: '整洁的', en: 'tidy', id: 1376 },
 		{ ch: '贫穷的', en: 'poor', id: 1377 },
-		{ ch: '电视', en: 'television', id: 1378 }
+		{ ch: '电视', en: 'television', id: 1378 },
+		{ ch: '黄色', en: 'yellow', id: 1379 },
+		{ ch: '幸运的', en: 'lucky', id: 1380 },
+		{ ch: '当然', en: 'of course', id: 1381 },
+		{ ch: '电话', en: 'telephone', id: 1382 },
+		{ ch: '干净的', en: 'clean', id: 1383 },
+		{ ch: '波兰', en: 'Poland', id: 1384 },
+		{ ch: '通过，传递，及格', en: 'pass', id: 1385 },
+		{ ch: '遇见', en: 'meet', id: 1386 },
+		{ ch: '曾经，从来，总是', en: 'ever', id: 1387 },
+		{ ch: '短的', en: 'short', id: 1388 },
+		{ ch: '纸张', en: 'paper', id: 1389 },
+		{ ch: '意大利', en: 'Italy', id: 1390 },
+		{ ch: '书报亭', en: 'newsagent', id: 1391 },
+		{ ch: '环绕，围住', en: 'surround', id: 1392 },
+		{ ch: '结婚', en: 'get married', id: 1393 },
+		{ ch: '鞋', en: 'shoe', id: 1394 },
+		{ ch: '费用', en: 'fare', id: 1395 },
+		{ ch: '罗马', en: 'Rome', id: 1396 },
+		{ ch: '几个，一点', en: 'a few', id: 1397 },
+		{ ch: '修理，补救', en: 'repair', id: 1398 }
 	]
 }
 
