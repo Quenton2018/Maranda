@@ -9,7 +9,7 @@
 		            </Input>
 		        </FormItem>
 		        <FormItem prop="passwd">
-		            <Input type="password" v-model="formInline.passwd" clearable placeholder="Password">
+		            <Input type="password" v-model="formInline.passwd" clearable placeholder="Password" @keyup.13="handleSubmit('formInline')">
 		                <Icon type="ios-lock-outline" slot="prepend"></Icon>
 		            </Input>
 		        </FormItem>

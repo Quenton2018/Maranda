@@ -437,7 +437,27 @@ const goodsData = {
 		{ ch: '费用', en: 'fare', id: 1395 },
 		{ ch: '罗马', en: 'Rome', id: 1396 },
 		{ ch: '几个，一点', en: 'a few', id: 1397 },
-		{ ch: '修理，补救', en: 'repair', id: 1398 }
+		{ ch: '修理，补救', en: 'repair', id: 1398 },
+		{ ch: '星期三', en: 'Wednesday', id: 1399 },
+		{ ch: '梨', en: 'pear', id: 1400 },
+		{ ch: '成本，费用', en: 'cost', id: 1401 },
+		{ ch: '真的', en: 'really', id: 1402 },
+		{ ch: '牙痛', en: 'toothache', id: 1403 },
+		{ ch: '旅游，旅行', en: 'trip', id: 1404 },
+		{ ch: '家庭主妇', en: 'housewife', id: 1405 },
+		{ ch: '任何事物', en: 'anything', id: 1406 },
+		{ ch: '五十', en: 'fifty', id: 1407 },
+		{ ch: '类型', en: 'type', id: 1408 },
+		{ ch: '文具商', en: 'stationer', id: 1409 },
+		{ ch: '还，迄今为止', en: 'yet', id: 1410 },
+		{ ch: '啤酒', en: 'beer', id: 1411 },
+		{ ch: '依靠，相信', en: 'depend on', id: 1412 },
+		{ ch: '马德里', en: 'Madrid', id: 1413 },
+		{ ch: '健康，状态好，井，流出', en: 'well', id: 1414 },
+		{ ch: '下降，下落', en: 'fall', id: 1415 },
+		{ ch: '任何一方', en: 'either', id: 1416 },
+		{ ch: '舌头', en: 'tongue', id: 1417 },
+		{ ch: '覆盖，掩盖，包括，足以支付', en: 'cover', id: 1418 }
 	]
 }
 
