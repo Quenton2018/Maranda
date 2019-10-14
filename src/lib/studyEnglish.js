@@ -457,7 +457,27 @@ const goodsData = {
 		{ ch: '下降，下落', en: 'fall', id: 1415 },
 		{ ch: '任何一方', en: 'either', id: 1416 },
 		{ ch: '舌头', en: 'tongue', id: 1417 },
-		{ ch: '覆盖，掩盖，包括，足以支付', en: 'cover', id: 1418 }
+		{ ch: '覆盖，掩盖，包括，足以支付', en: 'cover', id: 1418 },
+		{ ch: '能，会', en: 'can', id: 1419 },
+		{ ch: '他自己', en: 'himself', id: 1420 },
+		{ ch: '乐琴，电子琴', en: 'keyboard', id: 1421 },
+		{ ch: '低沉的', en: 'low', id: 1422 },
+		{ ch: '北方', en: 'north', id: 1423 },
+		{ ch: '现在', en: 'now', id: 1424 },
+		{ ch: '加拿大', en: 'Canada', id: 1425 },
+		{ ch: '嗨', en: 'hi', id: 1426 },
+		{ ch: '咖啡', en: 'coffee', id: 1427 },
+		{ ch: '香蕉', en: 'banana', id: 1428 },
+		{ ch: '上楼', en: 'come upstairs', id: 1429 },
+		{ ch: '第二十', en: 'twentieth', id: 1430 },
+		{ ch: '使落下', en: 'drop', id: 1431 },
+		{ ch: '标签', en: 'label', id: 1432 },
+		{ ch: '后来的', en: 'after', id: 1433 },
+		{ ch: '多风的', en: 'windy', id: 1434 },
+		{ ch: '讲，说', en: 'spoke', id: 1435 },
+		{ ch: '德国', en: 'Germany', id: 1436 },
+		{ ch: '夫人', en: 'madam', id: 1437 },
+		{ ch: '保持，停留', en: 'stay', id: 1438 }
 	]
 }
 
