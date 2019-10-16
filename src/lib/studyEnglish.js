@@ -477,7 +477,29 @@ const goodsData = {
 		{ ch: '讲，说', en: 'spoke', id: 1435 },
 		{ ch: '德国', en: 'Germany', id: 1436 },
 		{ ch: '夫人', en: 'madam', id: 1437 },
-		{ ch: '保持，停留', en: 'stay', id: 1438 }
+		{ ch: '保持，停留', en: 'stay', id: 1438 },
+		{ ch: '去，走，离开', en: 'go', id: 1439 },
+		{ ch: '这些', en: 'these', id: 1440 },
+		{ ch: '宝贝', en: 'baby', id: 1441 },
+		{ ch: '白色', en: 'white', id: 1442 },
+		{ ch: '给，赠送', en: 'give', id: 1443 },
+		{ ch: '丈夫', en: 'husband', id: 1444 },
+		{ ch: '星期三', en: 'Monday', id: 1445 },
+		{ ch: '紧邻，紧接', en: 'next to', id: 1446 },
+		{ ch: '澳大利亚的', en: 'Australian', id: 1447 },
+		{ ch: '美丽的', en: 'beautiful', id: 1448 },
+		{ ch: '在..里面', en: 'in', id: 1449 },
+		{ ch: '工作努力的', en: 'hard-working', id: 1450 },
+		{ ch: '先生', en: 'Mr.', id: 1451 },
+		{ ch: '指挥', en: 'conductor', id: 1452 },
+		{ ch: '灰尘', en: 'dust', id: 1453 },
+		{ ch: '当然', en: 'certainly', id: 1454 },
+		{ ch: '一千', en: 'one thousand', id: 1455 },
+		{ ch: '女儿', en: 'daughter', id: 1456 },
+		{ ch: '乳制品', en: 'dairy', id: 1457 },
+		{ ch: '收银机，直到..位置', en: 'till', id: 1458 },
+		{ ch: '耕地', en: 'tilled the land', id: 1459 },
+		{ ch: '日记', en: 'diary', id: 1460 }
 	]
 }
 
