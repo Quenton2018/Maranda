@@ -7,11 +7,12 @@
 					<span>我的</span><span style="color: #fe5187;">运动</span>
 				</div>
 			</div>
-			<div>
-				<Table :data="tableData" :columns="tableColumns" stripe></Table>
+			<div v-if="showData">
+				<Table :loading="loading" :data="showData" :columns="tableColumns" stripe></Table>
 			    <div style="margin: 10px;overflow: hidden">
+			    	<div style="float: left;">总比例：</div>
 			        <div style="float: right;">
-			            <Page :total="tableData.length" :current="1" @on-change="changePage($event)"></Page>
+			            <Page :total="goodsData.cardList.length" :current="1" @on-change="changePage($event)"></Page>
 			        </div>
 			    </div>
 			</div>
@@ -20,94 +21,80 @@
 </template>
 
 <script>
+	import goodsData from '../lib/sportsData.js'
 	export default {
 		created () {
 			this.init()
 		},
 		data () {
 			return {
-				nowCurrent: 1,
+				goodsData,
+				loading: true,
 				showData: [],
-				tableData: [
-					{
-						seq: 1,
-						date: '2019-10-16'
-					},
-					{
-						seq: 1,
-						date: '2019-10-16'
-					},
-					{
-						seq: 1,
-						date: '2019-10-16'
-					},
-					{
-						seq: 1,
-						date: '2019-10-16'
-					},
-					{
-						seq: 1,
-						date: '2019-10-16'
-					},
-					{
-						seq: 1,
-						date: '2019-10-16'
-					},
-					{
-						seq: 1,
-						date: '2019-10-16'
-					},
-					{
-						seq: 1,
-						date: '2019-10-16'
-					},
-					{
-						seq: 1,
-						date: '2019-10-16'
-					},
-					{
-						seq: 1,
-						date: '2019-10-16'
-					},
-					{
-						seq: 1,
-						date: '2019-10-16'
-					},
-					{
-						seq: 1,
-						date: '2019-10-16'
-					},
-					{
-						seq: 1,
-						date: '2019-10-16'
-					},
-					{
-						seq: 1,
-						date: '2019-10-16'
-					},
-					{
-						seq: 2,
-						date: '2019-10-16'
-					},
-				],
 				tableColumns: [
 					{
 						title: '序号',
 						key: 'seq'
 					},
 					{
-						title: '日期',
-						key: 'date'
+						title: '目标俯卧撑（个）',
+						key: 'targetFWC'
+					},
+					{
+						title: '完成俯卧撑（个）',
+						key: 'resultFWC'
+					},
+					{
+						title: '目标仰卧起坐（个）',
+						key: 'targetYWQZ'
+					},
+					{
+						title: '完成仰卧起坐（个）',
+						key: 'resultYWQZ'
+					},
+					{
+						title: '目标深蹲（个）',
+						key: 'targetSD'
+					},
+					{
+						title: '完成深蹲（个）',
+						key: 'resultSD'
+					},
+					{
+						title: '周目标15（km）',
+						key: 'targetPB'
+					},
+					{
+						title: '锻炼日期',
+						key: 'startTime'
+					},
+					{
+						title: '是否达标',
+						key: 'isOk',
+						render: (h, params) => {
+							const row = params.row
+							const flag = row.resultFWC>=row.targetFWC&&row.resultYWQZ>=row.targetYWQZ&&row.resultSD>=row.targetSD
+							const color = flag ? '#0f0' : '#f00'
+							return h ('span', {
+								style: {
+                                    color: color
+                                }
+							}, flag?'是':'否')
+						}
 					}
 				]
 			}
 		},
 		methods: {
-			init () {
-				
+			init (e = 1) {
+				this.loading = true
+				setTimeout(() => {
+					this.loading = false
+					this.showData = this.goodsData.cardList.filter((o, index) => index >= (e - 1 ) * 10 && index <= e * 10 - 1)
+				}, 1000)
 			},
 			changePage (e) {
-				console.log(e)
+				this.init(e)
 			}
 		}
 	}
