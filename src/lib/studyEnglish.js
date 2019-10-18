@@ -499,7 +499,27 @@ const goodsData = {
 		{ ch: '乳制品', en: 'dairy', id: 1457 },
 		{ ch: '收银机，直到..位置', en: 'till', id: 1458 },
 		{ ch: '耕地', en: 'tilled the land', id: 1459 },
-		{ ch: '日记', en: 'diary', id: 1460 }
+		{ ch: '日记', en: 'diary', id: 1460 },
+		{ ch: '早的', en: 'early', id: 1461 },
+		{ ch: '最后，最近，最新', en: 'last', id: 1462 },
+		{ ch: '宴会，主餐', en: 'dinner', id: 1463 },
+		{ ch: '水果，果实', en: 'fruit', id: 1464 },
+		{ ch: '在楼上', en: 'upstairs', id: 1465 },
+		{ ch: '男演员', en: 'actor', id: 1466 },
+		{ ch: '价格', en: 'price', id: 1467 },
+		{ ch: '粉末，细面', en: 'powder', id: 1468 },
+		{ ch: '杯子', en: 'cup', id: 1469 },
+		{ ch: '空气', en: 'air', id: 1470 },
+		{ ch: '仍然，还是', en: 'still', id: 1471 },
+		{ ch: '窗口，窗户', en: 'window', id: 1472 },
+		{ ch: '兄弟', en: 'brother', id: 1473 },
+		{ ch: '崩溃，死机，狂跌，坠毁', en: 'crash', id: 1474 },
+		{ ch: '游泳', en: 'swim', id: 1475 },
+		{ ch: '服务', en: 'serve', id: 1476 },
+		{ ch: '剃发，剃胡须', en: 'shave', id: 1477 },
+		{ ch: '块，片，条，段', en: 'piece', id: 1478 },
+		{ ch: '数学', en: 'mathematics', id: 1479 },
+		{ ch: '客厅', en: 'living room', id: 1480 }
 	]
 }
 
