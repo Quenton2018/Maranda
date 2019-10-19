@@ -3,12 +3,12 @@ const goodsData = {
 		{
 			seq: 1,
 			targetFWC: 50,
-			resultFWC: 0,
+			resultFWC: 50,
 			targetYWQZ: 50,
-			resultYWQZ: 0,
+			resultYWQZ: 50,
 			targetSD: 50,
-			resultSD: 0,
-			resultPB: 0,
+			resultSD: 50,
+			resultPB: 6,
 			startTime: '2019-10-19'
 		}
   ]
