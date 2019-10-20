@@ -15,7 +15,7 @@
 			    		<span>总俯卧撑：{{bigData.resultFWC}}个，占比{{(bigData.resultFWC/bigData.targetFWC*100).toFixed(1)}}%</span>
 			    		<span>总仰卧起坐：{{bigData.resultYWQZ}}个，占比{{(bigData.resultYWQZ/bigData.targetYWQZ*100).toFixed(1)}}%</span>
 			    		<span>总深蹲：{{bigData.resultSD}}个，占比{{(bigData.resultSD/bigData.targetSD*100).toFixed(1)}}%</span>
-			    		<span>总跑步：{{bigData.resultPB}}千米，占比{{(bigData.resultPB/(10*bigData.day)*100).toFixed(1)}}%</span>
+			    		<span>总跑步：{{bigData.resultPB}}千米</span>
 			    	</div>
 			        <div style="float: right;">
 			            <Page :total="goodsData.cardList.length" :current="1" @on-change="changePage($event)"></Page>
