@@ -519,7 +519,27 @@ const goodsData = {
 		{ ch: '剃发，剃胡须', en: 'shave', id: 1477 },
 		{ ch: '块，片，条，段', en: 'piece', id: 1478 },
 		{ ch: '数学', en: 'mathematics', id: 1479 },
-		{ ch: '客厅', en: 'living room', id: 1480 }
+		{ ch: '客厅', en: 'living room', id: 1480 },
+		{ ch: '门，门口', en: 'door', id: 1481 },
+		{ ch: '也，同样', en: 'as well', id: 1482 },
+		{ ch: '黑板', en: 'blackboard', id: 1483 },
+		{ ch: '孩子们', en: 'children', id: 1484 },
+		{ ch: '日本', en: 'Japan', id: 1485 },
+		{ ch: '钟', en: 'o’clock', id: 1486 },
+		{ ch: '安置，放', en: 'put', id: 1487 },
+		{ ch: '理发师', en: 'hairdresser', id: 1488 },
+		{ ch: '铺床', en: 'make the bed', id: 1489 },
+		{ ch: '以前', en: 'ago', id: 1490 },
+		{ ch: '感觉', en: 'feel', id: 1491 },
+		{ ch: '西红柿', en: 'tomato', id: 1492 },
+		{ ch: '戒指', en: 'ring', id: 1493 },
+		{ ch: '习惯，风俗', en: 'custom', id: 1494 },
+		{ ch: '第九，九分之一', en: 'ninth', id: 1495 },
+		{ ch: '命令', en: 'fiat', id: 1496 },
+		{ ch: '有名的', en: 'famous', id: 1497 },
+		{ ch: '电动的，通电的', en: 'electric', id: 1498 },
+		{ ch: '在...中', en: 'among', id: 1499 },
+		{ ch: '对面的', en: 'opposite', id: 1500 }
 	]
 }
 
