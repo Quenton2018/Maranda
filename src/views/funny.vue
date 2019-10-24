@@ -65,13 +65,15 @@
 				this.funnyList = data.data || []
 			},
 			async update (type = 1, page = 1) {
-				this.loading = true
-				this.btnText = '拼命加载中...'
-				let data = await request('https://www.apiopen.top/satinApi?type='+type+'&page='+page, 'get', {})
-				this.loading = false
-				this.btnText = '加载更多'
-				this.funnyList.push(...data.data)
-				
+				if (!this.loading) {
+					this.loading = true
+					this.btnText = '拼命加载中...'
+					let data = await request('https://www.apiopen.top/satinApi?type='+type+'&page='+page, 'get', {})
+					this.loading = false
+					this.btnText = '加载更多'
+					this.$Message.success('更新成功')
+					this.funnyList.push(...data.data)
+				}
 			}
 		}
 	}
