@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<div class="content-wrap">
+		<div class="content-wrap" :style="{minHeight: clientHeight - 195 + 'px'}">
 			<div class="content">
 				<div class="title" style="position: relative;">
 					<img src="../assets/img/maintopbg.jpg" alt="帘子" />
@@ -10,7 +10,7 @@
 				</div>
 				<div class="inner">
 					<ul>
-						<li v-for="(val,i) in funnyList" :key="i" v-if="val.videouri !== ''">
+						<li v-for="(val, i) in funnyList" :key="i" v-if="val.videouri !== ''">
 							<div class="inner-info">
 								<div class="info-img">
 									<img :src="val.profile_image"/>
@@ -31,6 +31,9 @@
 						</li>
 					</ul>
 					<Spin size="large" fix v-if="spinShow"></Spin>
+					<div class="update" @click="update()">
+						<Button type="primary" :loading="loading" long icon="ios-refresh-circle-outline">{{btnText}}</Button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -43,11 +46,14 @@
 	export default {
 		created () {
 			this.init()
-			console.log(this.$video)
+			this.clientHeight = document.documentElement.clientHeight
 		},
 		data () {
 			return {
 				spinShow: false,
+				clientHeight: null,
+				btnText: '加载更多',
+				loading: false,
 				funnyList: []
 			}
 		},
@@ -57,7 +63,15 @@
 				let data = await request('https://www.apiopen.top/satinApi?type='+type+'&page='+page, 'get', {})
 				this.spinShow = false
 				this.funnyList = data.data || []
-				console.log(data)
+			},
+			async update (type = 1, page = 1) {
+				this.loading = true
+				this.btnText = '拼命加载中...'
+				let data = await request('https://www.apiopen.top/satinApi?type='+type+'&page='+page, 'get', {})
+				this.loading = false
+				this.btnText = '加载更多'
+				this.funnyList.push(...data.data)
+				
 			}
 		}
 	}
@@ -150,6 +164,11 @@
 	
 	.video-box {
 		margin: 15px 0;
+	}
+	.update {
+		width: 100%;
+		text-align: center;
+		font-size: 14px;
 	}
 	
 </style>

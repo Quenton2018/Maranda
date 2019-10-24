@@ -34,3 +34,14 @@ export const day000000 = function (date) {
     millisecond: 0
   }).toDate() : ''
 }
+export const nowDate = function (modifyDate) {
+  let date = new Date(modifyDate)
+  let Y = date.getFullYear() + '/'
+  let M = (date.getMonth() + 1).toString().padStart(2, 0) + '/'
+  let D = date.getDate().toString().padStart(2, 0)
+  let h = date.getHours().toString().padStart(2, 0) + ':'
+  let m = date.getMinutes().toString().padStart(2, 0) + ':'
+  let s = date.getSeconds().toString().padStart(2, 0)
+  let modifyTime = Y + M + D + ' ' + h + m + s
+  return modifyTime
+}

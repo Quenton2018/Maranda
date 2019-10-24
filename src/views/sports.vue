@@ -1,5 +1,5 @@
 <template>
-	<div class="content-wrap">
+	<div class="content-wrap" :style="{minHeight: bodyHeight + 'px'}">
 		<div class="content">
 			<div class="title" style="position: relative;">
 				<img src="../assets/img/maintopbg.jpg" alt="学习英语" />
@@ -10,7 +10,7 @@
 			<div v-if="showData">
 				<Table :loading="loading" :data="showData" :columns="tableColumns" stripe></Table>
 			    <div style="margin: 10px 0;overflow: hidden">
-			    	<div class="big-data" style="float: left;">
+			    	<div v-if="!loading" class="big-data" style="float: left;">
 			    		<span>总天数：{{bigData.day}}天</span>
 			    		<span>总俯卧撑：{{bigData.resultFWC}}个，占比{{(bigData.resultFWC/bigData.targetFWC*100).toFixed(1)}}%</span>
 			    		<span>总仰卧起坐：{{bigData.resultYWQZ}}个，占比{{(bigData.resultYWQZ/bigData.targetYWQZ*100).toFixed(1)}}%</span>
@@ -30,12 +30,14 @@
 	import goodsData from '../lib/sportsData.js'
 	export default {
 		created () {
+			this.bodyHeight = document.documentElement.clientHeight - 195
 			this.init()
 		},
 		data () {
 			return {
 				goodsData,
 				loading: true,
+				bodyHeight: 0,
 				showData: [],
 				bigData: {},
 				tableColumns: [
