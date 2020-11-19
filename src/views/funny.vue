@@ -52,7 +52,7 @@
 			return {
 				spinShow: false,
 				clientHeight: null,
-				btnText: '加载更多',
+				btnText: '-加载更多-',
 				loading: false,
 				funnyList: []
 			}
